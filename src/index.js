@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Widget from "./widget/widget";
+import Widget from "./widget/widget.container";
 
 // Redux
 import { createStore } from "redux";
