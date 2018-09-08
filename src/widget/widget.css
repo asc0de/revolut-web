@@ -1,0 +1,6 @@
+.widget {
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+    background-image: linear-gradient(to bottom left, #b73cb5 10%, #0b58b2);
+}

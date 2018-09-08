@@ -1,0 +1,24 @@
+.header-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: rgba(255, 255, 255, 0.2) solid 1px;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0.2em 0.4em;
+    margin: 0.5em;
+    cursor: pointer;
+    transition: border-color ease-in-out 200ms;
+    outline: none;
+}
+
+.header-button::after {
+    content: url(./assets/down-arrow.svg);
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0.5em;
+}
+
+.header-button:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+}
