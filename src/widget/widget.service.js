@@ -3,9 +3,9 @@ import config from "../config";
 
 export function startPollingData(onDataReceived) {
     getRates().then(onDataReceived);
-    return setInterval(() => {
-        getRates().then(onDataReceived);
-    }, config.POLLING_INTERVAL);
+    // return setInterval(() => {
+    //     getRates().then(onDataReceived);
+    // }, config.POLLING_INTERVAL);
 }
 
 function getRates() {

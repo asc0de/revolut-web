@@ -8,7 +8,7 @@
     padding: 0.2em 0.4em;
     margin: 0.5em;
     cursor: pointer;
-    transition: border-color ease-in-out 200ms;
+    transition: all ease-in-out 200ms;
     outline: none;
 }
 
@@ -21,4 +21,10 @@
 
 .header-button:hover {
     border-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(59, 81, 179, 0.3);
+}
+
+.header-button:active {
+    border-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(59, 81, 179, 0.7);
 }
