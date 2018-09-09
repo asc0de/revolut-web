@@ -30,3 +30,7 @@
     border-color: rgb(255, 255, 255);
     transform: scale(1.2);
 }
+
+.currency-carousel.target {
+    background-image: linear-gradient(to bottom left, #b73cb5 10%, #0b58b2);
+}

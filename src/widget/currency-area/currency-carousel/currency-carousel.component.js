@@ -11,7 +11,8 @@ class CurrencyCarousel extends Component {
     }
 
     componentWillMount() {
-        this.choosenCurrency = this.props.type === CarouselTypes.SOURCE ? this.props.source : this.props.target;
+        this.type = this.props.type;
+        this.choosenCurrency = this.type === CarouselTypes.SOURCE ? this.props.source : this.props.target;
     }
 
     render() {
@@ -20,7 +21,7 @@ class CurrencyCarousel extends Component {
             marginLeft: -this.props.range.indexOf(this.choosenCurrency) * 100 + "%"
         };
         return (
-            <div className="currency-carousel">
+            <div className={"currency-carousel " + (this.type === CarouselTypes.SOURCE ? "source" : "target")}>
                 <div className="currency-carousel-container" style={dynamicStyles}>
                     {this.props.range.map((currency, i) => (
                         <CurrencySlide code={currency} key={i} type={this.props.type} />
