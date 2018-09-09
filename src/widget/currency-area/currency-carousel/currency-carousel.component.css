@@ -9,6 +9,7 @@
 .currency-carousel .currency-carousel-container {
     display: flex;
     height: 100%;
+    transition: margin-left 200ms ease-in-out;
 }
 
 .currency-carousel .dot-container {

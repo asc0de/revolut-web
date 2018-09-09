@@ -15,11 +15,15 @@ class CurrencyCarousel extends Component {
     }
 
     render() {
+        const dynamicStyles = {
+            width: this.props.range.length * 100 + "%",
+            marginLeft: -this.props.range.indexOf(this.choosenCurrency) * 100 + "%"
+        };
         return (
             <div className="currency-carousel">
-                <div className="currency-carousel-container" style={{ width: this.props.range.length * 100 + "%" }}>
+                <div className="currency-carousel-container" style={dynamicStyles}>
                     {this.props.range.map((currency, i) => (
-                        <CurrencySlide code={currency} key={i} />
+                        <CurrencySlide code={currency} key={i} type={this.props.type} />
                     ))}
                 </div>
                 <div className="dot-container">
