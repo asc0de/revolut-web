@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "./header/header.component";
 import { startPollingData } from "./widget.service";
 import "./widget.component.css";
-import CurrencyArea from "./currency-area/currency-area.component";
+import CurrencyArea from "./currency-area/currency-area.container";
 
 class Widget extends Component {
     constructor() {

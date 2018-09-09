@@ -6,7 +6,22 @@ const initialState = {
     sourceCurrency: Currency.GBP,
     targetCurrency: Currency.EUR,
     sourceToTargetRate: 1,
-    targetToSourceRate: 1
+    targetToSourceRate: 1,
+    currenciesRange: [Currency.GBP, Currency.EUR, Currency.USD],
+    wallet: [
+        {
+            id: Currency.GBP,
+            amount: 49.17
+        },
+        {
+            id: Currency.EUR,
+            amount: 33.53
+        },
+        {
+            id: Currency.USD,
+            amount: 26.18
+        }
+    ]
 };
 
 export default function WidgetReducer(state = initialState, action) {
