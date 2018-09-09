@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./header/header.component";
 import { startPollingData } from "./widget.service";
 import "./widget.component.css";
+import CurrencyArea from "./currency-area/currency-area.component";
 
 class Widget extends Component {
     constructor() {
@@ -23,6 +24,7 @@ class Widget extends Component {
         return (
             <div className="widget">
                 <Header />
+                <CurrencyArea source={this.props.sourceCurrency} target={this.props.targetCurrency} />
             </div>
         );
     }

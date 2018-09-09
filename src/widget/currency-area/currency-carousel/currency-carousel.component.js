@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-class CurrencySection extends Component {
+class CurrencyCarousel extends Component {
     render() {
         return <div />;
     }
 }
 
-export default CurrencySection;
+export default CurrencyCarousel;

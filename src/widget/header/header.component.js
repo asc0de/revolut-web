@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./header.component.css";
-import HeaderButton from "./header-button/header-button.component";
+import HeaderButton from "./header-button/header-button.container";
 
 class Header extends Component {
     render() {

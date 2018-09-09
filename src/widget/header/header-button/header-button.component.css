@@ -1,11 +1,10 @@
 .header-button {
     display: flex;
-    align-items: center;
     background-color: transparent;
     border: rgba(255, 255, 255, 0.2) solid 1px;
     color: #ffffff;
     border-radius: 5px;
-    padding: 0.2em 0.4em;
+    padding: 0.4em 0.4em;
     margin: 0.5em;
     cursor: pointer;
     transition: all ease-in-out 200ms;
@@ -27,4 +26,8 @@
 .header-button:active {
     border-color: rgba(255, 255, 255, 0.9);
     background-color: rgba(59, 81, 179, 0.7);
+}
+
+.header-button .currency-presenter {
+    margin: 0 0.3em;
 }
