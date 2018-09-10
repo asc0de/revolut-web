@@ -24,6 +24,8 @@
     text-align: right;
     font-size: 1.8em;
     width: 50%;
+    max-width: 50%;
+    overflow-x: hidden;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 

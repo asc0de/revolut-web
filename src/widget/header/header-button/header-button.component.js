@@ -6,7 +6,7 @@ class HeaderButton extends Component {
     render() {
         return (
             <button className="header-button">
-                <Currency amount={1} code={this.props.source} /> = <Currency amount={this.props.rate} code={this.props.target} fraction={5} />
+                <Currency amount={1} code={this.props.source} /> = <Currency amount={this.props.rate} code={this.props.target} fraction={4} />
             </button>
         );
     }

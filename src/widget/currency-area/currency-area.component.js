@@ -7,8 +7,8 @@ class CurrencyArea extends Component {
     render() {
         return (
             <div className="currency-area">
-                <CurrencyCarousel current={this.props.source} compareTo={this.props.target} type={CarouselTypes.SOURCE} />
-                <CurrencyCarousel current={this.props.target} compareTo={this.props.source} type={CarouselTypes.TARGET} />
+                <CurrencyCarousel code={this.props.source} type={CarouselTypes.SOURCE} />
+                <CurrencyCarousel code={this.props.target} type={CarouselTypes.TARGET} />
             </div>
         );
     }
