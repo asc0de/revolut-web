@@ -5,35 +5,41 @@ const initialState = {
     rates: [],
     sourceCurrency: Currency.GBP,
     targetCurrency: Currency.EUR,
-    sourceToTargetRate: 1,
-    targetToSourceRate: 1,
+    baseRate: 1,
+    baseBackRate: 1,
     currenciesRange: [Currency.GBP, Currency.EUR, Currency.USD],
     wallet: [
         {
             id: Currency.GBP,
             amount: 49.17,
             exchange: 0,
-            target: 0
+            target: 0,
+            rate: 1,
+            backRate: 1
         },
         {
             id: Currency.EUR,
             amount: 33.53,
             exchange: 0,
-            target: 0
+            target: 0,
+            rate: 1,
+            backRate: 1
         },
         {
             id: Currency.USD,
             amount: 26.18,
             exchange: 0,
-            target: 0
+            target: 0,
+            rate: 1,
+            backRate: 1
         }
     ]
 };
 
 const calculateBaseRates = (state, rates) => {
     return {
-        sourceToTargetRate: (1 / rates[state.sourceCurrency]) * rates[state.targetCurrency],
-        targetToSourceRate: rates[state.sourceCurrency] / rates[state.targetCurrency]
+        baseRate: (1 / rates[state.sourceCurrency]) * rates[state.targetCurrency],
+        baseBackRate: rates[state.sourceCurrency] / rates[state.targetCurrency]
     };
 };
 

@@ -8,7 +8,10 @@ const mapStateToProps = (state, ownProps) => {
         wallet: state.widget.wallet,
         exchange: currentWallet ? currentWallet.exchange : 0,
         target: currentWallet ? currentWallet.target : 0,
-        walletAmount: currentWallet ? currentWallet.amount : 0
+        walletAmount: currentWallet ? currentWallet.amount : 0,
+        sourceCurrency: state.widget.sourceCurrency,
+        rate: currentWallet.rate,
+        backRate: currentWallet.backRate
     };
 };
 

@@ -4,20 +4,6 @@ import { CarouselTypes } from "../../currency-area.constants";
 import "./currency-slide.component.css";
 
 class CurrencySlide extends Component {
-    constructor() {
-        super();
-        this.state = {
-            inputValue: null,
-            target: null
-        };
-    }
-
-    componentWillMount() {
-        this.setState({
-            inputValue: this.props.exchangeValue
-        });
-    }
-
     componentDidMount() {
         if (this.props.active && this.props.type === CarouselTypes.SOURCE) this.input.focus();
     }
@@ -46,6 +32,14 @@ class CurrencySlide extends Component {
         }
     }
 
+    appendBackRate() {
+        return (
+            <span className="currency-additional-info">
+                <Currency amount={1} code={this.props.code} /> = <Currency amount={this.props.backRate} code={this.props.sourceCurrency} fraction={2} />
+            </span>
+        );
+    }
+
     render() {
         return (
             <div className="currency-slide">
@@ -57,7 +51,7 @@ class CurrencySlide extends Component {
                     <span className="currency-additional-info">
                         You have <Currency amount={this.props.walletAmount} code={this.props.code} fraction={2} />
                     </span>
-                    <span className="currency-additional-info" />
+                    {this.props.type === CarouselTypes.TARGET ? this.appendBackRate() : null}
                 </div>
             </div>
         );

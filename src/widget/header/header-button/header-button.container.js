@@ -5,7 +5,7 @@ const mapStateToProps = state => {
     return {
         source: state.widget.sourceCurrency,
         target: state.widget.targetCurrency,
-        rate: state.widget.sourceToTargetRate
+        rate: state.widget.baseRate
     };
 };
 
