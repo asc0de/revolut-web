@@ -1,5 +1,6 @@
 import { combineReducers } from "redux";
+import WidgetReducer from "./widget/widget.reducer";
 
 export default combineReducers({
-    currenciesPage: (state = {}) => state
+    widget: WidgetReducer
 });

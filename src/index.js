@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import Widget from "./widget/widget.container";
 
 // Redux
 import { createStore } from "redux";
@@ -12,7 +12,7 @@ const store = createStore(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && windo
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <Widget />
     </Provider>,
     document.getElementById("root")
 );

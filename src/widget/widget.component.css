@@ -1,0 +1,9 @@
+.widget {
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+    height: 20em;
+    background-image: linear-gradient(to bottom left, #b73cb5 10%, #0b58b2);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
