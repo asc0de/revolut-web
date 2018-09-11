@@ -6,4 +6,5 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 8em;
+    overflow-x: hidden;
 }
